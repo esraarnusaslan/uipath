@@ -96,11 +96,7 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="558.4,768" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="str_Isim">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">esra</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="esra" Name="str_Isim" />
       <Variable x:TypeArguments="x:String" Name="str_ScopeTest" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -113,7 +109,7 @@
         <OutArgument x:TypeArguments="x:String">[str_Isim]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">test</InArgument>
+        <InArgument x:TypeArguments="x:String">test-son-test</InArgument>
       </Assign.Value>
     </Assign>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="496,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[str_Isim]" />
@@ -128,10 +124,10 @@
           <OutArgument x:TypeArguments="x:String">[str_ScopeTest]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String" xml:space="preserve"> </InArgument>
+          <InArgument x:TypeArguments="x:String" />
         </Assign.Value>
       </Assign>
     </Sequence>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="496,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Test&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="496,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Test2&quot;]" />
   </Sequence>
 </Activity>
